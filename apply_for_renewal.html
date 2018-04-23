@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>OSP-Home</title>
+<head>
+  <script src="addproject.js">
+  </script>
+<style>
+ul#m01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li#m01 {
+    float: left;
+}
+
+li#m01 a {
+    display: block ;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li#m01 a:hover:not(.active) {
+    background-color: black;
+}
+.active{
+   background-color: gray;
+}
+.header{
+    background-color: #14B9DA;
+    color: white;
+    padding: 5px;
+}
+body{
+    background-color: black;
+}
+input, textarea{
+    border: solid 1px blue;
+    border-radius: 2px;
+    padding: 5px;
+}
+input#m02{
+    width: 60%;
+}
+p{
+    color: white;
+}
+p#m02 a:link {
+    color: #21A217;
+    text-decoration: none;
+}
+
+p#m02 a:visited {
+    color: #21A217;
+}
+
+p#m02 a:hover {
+    text-decoration: underline;
+}
+
+p#m02 a:active {
+    color: red;
+}
+
+p#m03 a:link, a:visited {
+    background-color: #14B9DA;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+p#m03 a:hover, a:active {
+    background-color: #21A217;
+}
+</style>
+</head>
+<body>
+<div class="header"><br>
+<img src="scholarship.png" height="150" width="150">
+<center><h1>ONLINE SCHOLARSHIP PORTAL</h1></center>
+<!--<center><h1><marquee bg color="black" behaviour=alternate direction=left loop=6 scrollamount=5 scrolldelay=50 width=50%>* DEPARTMENT IT * DEPARTMENT IT * DEPARTMENT IT *</marquee></h1></center>-->
+<ul id="m01">
+  <li id="m01"><a href="home.html">Home</a></li>
+  <li id="m01"><a href="about_us.html">About us</a></li>
+  <li id="m01"><a href="complaints.html">Complaints</a></li>
+  <li id="m01"><a href="mail_us.html">Mail us</a></li>
+</ul>
+</div><br>
+<p id="m02"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="new_user-register.html" target="_blank">New User? Register</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><a href="login_to_apply.html" target="_blank">Login to Apply</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><a href="apply_for_renewal.html" target="_blank">Apply for Renewal</a></b></p><br><br>
+<form>
+<center><p>Apply For Renewal</p></center>
+<center><p id="m03"><a href="yes.html" target="_blank">Yes</a>
+  &nbsp;&nbsp;&nbsp;&nbsp;<a href="home.html" target="_blank">No</a></p></center>
+</form>
+</body>
+</html>

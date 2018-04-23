@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<title>OSP-Home</title>
+<head>
+  <script src="addproject.js">
+  </script>
+<style>
+ul#m01 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li#m01 {
+    float: left;
+}
+
+li#m01 a {
+    display: block ;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li#m01 a:hover:not(.active) {
+    background-color: black;
+}
+.active{
+   background-color: gray;
+}
+.header{
+    background-color: #14B9DA;
+    color: white;
+    padding: 5px;
+}
+body{
+    background-color: black;
+}
+input, textarea{
+    border: solid 1px blue;
+    border-radius: 2px;
+    padding: 5px;
+}
+input#m02{
+    width: 60%;
+}
+p{
+    color: white;
+}
+p#m02 a:link {
+    color: #21A217;
+    text-decoration: none;
+}
+
+p#m02 a:visited {
+    color: #21A217;
+}
+
+p#m02 a:hover {
+    text-decoration: underline;
+}
+
+p#m02 a:active {
+    color: red;
+}
+</style>
+</head>
+<body>
+<div class="header"><br>
+<img src="scholarship.png" height="150" width="150">
+<center><h1>ONLINE SCHOLARSHIP PORTAL</h1></center>
+<!--<center><h1><marquee bg color="black" behaviour=alternate direction=left loop=6 scrollamount=5 scrolldelay=50 width=50%>* DEPARTMENT IT * DEPARTMENT IT * DEPARTMENT IT *</marquee></h1></center>-->
+<ul id="m01">
+  <li id="m01"><a href="home.html">Home</a></li>
+  <li id="m01"><a href="about_us.html">About us</a></li>
+  <li id="m01"><a href="complaints.html">Complaints</a></li>
+  <li id="m01"><a href="mail_us.html">Mail us</a></li>
+</ul>
+</div><br>
+<p id="m02"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="new_user-register.html" target="_blank">New User? Register</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><a href="login_to_apply.html" target="_blank">Login to Apply</a></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b><a href="apply_for_renewal.html" target="_blank">Apply for Renewal</a></b></p>
+
+<form name="addproject" onsubmit="return myFunction()">
+<fieldset>
+<legend><p>New_user Registration</p></legend><br>
+<p>Applicant No. :
+<input type="text" name="applicantno" disabled="disable" value="E501"></p><br>
+<p>Applicant Name :
+<input type="text" name="firstname" placeholder="Enter First Name" disabled="disable" value="SAINI"></p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="middlename" placeholder="Enter Middle Name" disabled="disable" value="JASJEET"></p><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname" placeholder="Enter Last Name" disabled="disable" value="SINGH"></p><br>
+<p>Mobile No. :
+<input type="tel" name="contact" maxlength=10 id="ca" onkeyup="limit(this,10);" disabled="disable" value="9937466564"></p><br>
+<p>DOB :
+<input type="text" name="dateofbirth" disabled="disable" value="09-09-1997"></p><br>
+<p>Email :
+<input type="email" name="emailid" disabled="disable" value="sainijasjeet33@gmail.com"></p><br>
+<p>Address :<br><br>
+<textarea rows="5" cols="100" name="address" disabled="disable">265/2106, Motilal Nagar No.1, Road No.7, Goregaon (w), Mumbai-400104.</textarea></p><br>
+<p> Correspondance Address :<br><br>
+<textarea rows="5" cols="100" name="corr_address" disabled="disable">265/2106, Motilal Nagar No.1, Road No.7, Goregaon (w), Mumbai-400104.</textarea></p><br>
+<p>Martial status :
+<select name="martial_status">
+         <option name="select" value="Select" disabled selected>Unmarried
+         <option name="select" value="Married">Married
+         <option name="select" value="Unmarried">Unmarried
+        </select></p><br>
+<p>Scholarship Type (Category) :
+<select name="scholarshiptype">
+         <option name="select" value="Select" disabled selected>Top Class
+         <option name="select" value="PMSC">Post Matrix Scholarship Scheme
+         <option name="select" value="Top_class">Top Class
+         </select></p><br>
+<p>Name of Institute :
+         <input type="text" name="noi" disabled="disable" value="Don Bosco Institute Of Technology"></p><br>
+<p>Loan Ammount :
+         <input type="text" name="loan_ammount" disabled="disable" value="50,000/-"></p><br>
+<p>State of Domicile :
+<select name="domicile">
+         <option name="selectstate" value="Select State" disabled selected>Maharashtra
+         <option name="selectstate" value="Maharashtra">Maharashtra
+         <option name="selectstate" value="Madhya Pradesh">Madhya Pradesh
+         <option name="selectstate" value="Uttar Pradesh">Uttar Pradesh
+         <option name="selectstate" value="Jammu & Kashmir">Jammu & Kashmir
+         <option name="selectstate" value="Gujarat">Gujarat
+         <option name="selectstate" value="Karnataka">Karnataka
+         <option name="selectstate" value="Andhra Pradesh">Andhra Pradesh
+         </select></p><br>
+<p> Identification Details :<br><br>
+<textarea rows="5" cols="100" name="ident_details" disabled="disable">No identification mark.</textarea></p><br>
+<p>Aaddhar No. :
+<input type="tel" name="aaddhar" maxlength=12 onkeyup="limit(this,12);" disabled="disable" value="778633452663"></p><br>
+<p>Bank Account :
+<input type="text" name="bank_acc" disabled="disable" value="No bank account"></p><br>
+<button class="button"><span>SUBMIT</span></button>
+</fieldset>
+</form>
+</body>
+</html>
